@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aksesgps_viton_varibasa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- syntax ini adalah untuk mendapatkan izin internet -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- syntax ini adalah mendapatkan sinyal GPS berdasarkan sinyal Satellit, jarak akurasi berkisar 3km -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- syntax ini adalah mendapatkan sinyal GPS berdasarkan sinyal BTS, jarak akurasi berkisar 1km -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AKSESGPS_Viton_Varibasa">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
